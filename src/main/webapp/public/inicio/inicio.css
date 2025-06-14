@@ -1,0 +1,136 @@
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows:
+        auto 1fr auto;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.image {
+    background-image: url('../assets/imagenFondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 7em;
+    margin: 0;
+}
+
+.seccion{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.proxPartidos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 20px; /* Agrega espacio entre las tablas */
+}
+
+.partido {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    table-layout: fixed;
+}
+
+.partido td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    word-wrap: break-word;
+}
+
+#fecha {
+    background-color: rgb(56, 102, 65);
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* Estilos de los botones de Próximos Partidos*/
+
+.botonesPartidos{
+    display: flex;
+    gap: 30px;
+}
+
+.botonesPartidos button{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botonesPartidos button:hover{
+    background-color: rgb(58, 90, 64);
+    color: white;
+}
+
+/* Estilos para los lideres*/
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 8px;
+    background-color: rgb(58, 90, 64);
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-row-start: 5;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+    grid-row-start: 5;
+}
+

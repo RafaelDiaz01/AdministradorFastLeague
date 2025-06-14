@@ -1,0 +1,15 @@
+/*Archivo para los estilos del footer*/
+
+footer {
+    background-color: rgb(58, 90, 64);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a{
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
